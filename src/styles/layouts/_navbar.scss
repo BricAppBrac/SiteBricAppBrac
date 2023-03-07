@@ -9,8 +9,6 @@ nav {
   background: url(../../assets/img/champetre.jpg) center/cover;
 
 
- 
- 
   .nav-container {
     width: 100vw;
     padding: 20px;
@@ -22,7 +20,6 @@ nav {
       padding: 0 auto;
     }
    
-
     .logo {
       border: 2px solid whitesmoke;
       box-shadow: 8px 7px 18px 3px whitesmoke;
@@ -69,23 +66,13 @@ nav {
       }
       @media screen and (max-width: 500px) {
        
-        display: flex;
-        flex-direction: column;
+        
         width: 90%;
-        align-items: center;
-        margin-bottom: 5px;
+       
+       
         max-height: 120px;
        
       }
-      // @media screen and (max-width: 470px) {
-      //   max-width: calc(330px - 4vw);
-      //   grid-template-columns: 1fr;
-      //   grid-template-rows: 1fr 1fr 1fr;
-      //   grid-template-areas:
-      //     "lo" 
-      //     "na"
-      //     "sl";
-      // }
 
       h2 {
         grid-area: lo;
@@ -108,10 +95,14 @@ nav {
           letter-spacing: 1px;
         }
         @media screen and (max-width: 500px) {
-          font-family: $font2;
-          font-size: 1rem;
-          padding-left: 0;
-          text-align: center;
+          padding-left: 10px;
+          font-size: 1.5rem;
+          
+        }
+        @media screen and (max-width: 420px) {
+          padding-left: 3px;
+          font-size: 1.4rem;
+          
         }
     
       }
@@ -124,11 +115,14 @@ nav {
        
 
         @media screen and (max-width: 600px) {
-          justify-content:flex-end;
+          justify-content: space-between;
         }
         @media screen and (max-width: 500px) {
           margin-right: 7px;
-         
+        }
+        @media screen and (max-width: 380px) {
+          margin-right: 2px;
+          justify-content: space-around;
         }
 
         li {
@@ -146,17 +140,22 @@ nav {
             padding: 0 5px;
             letter-spacing: normal;
           }
-          @media screen and (max-width: 500px) {
-            font-family: $font2;
-            font-size: 0.8rem;
-           
+          @media screen and (max-width: 380px) {
+            font-size: 0.9rem;
+            max-width: 40px;
           }
+          // @media screen and (max-width: 500px) {
+          //   font-family: $font2;
+          //   font-size: 0.8rem;
+           
+          // }
           /* couleur du lien après la visite de l'utilisateur */
           a.nav-active {
             background: $green;
           }
           a {
             text-decoration: none;
+            color: whitesmoke;
             padding: 2px;
             border-radius: 10px;
             /* liens cliquables non-soulignés*/
@@ -224,17 +223,19 @@ nav {
           border-radius: 10px;
           border: 2px $green;
           @media screen and (max-width: 500px) {
-            font-size: 0.8rem;
+           
             margin: 8px;
             padding: 5px;
           }
           @media screen and (max-width: 460px) {
             font-size: 0.7rem;
           }
-          @media screen and (max-width: 420px) {
-            margin: 5px;
-            padding: 3px;
-          }
+          @media screen and (max-width: 390px) {
+            margin: 3px;
+            padding: 2px;
+            
+           }
+         
          
         }
       }
@@ -267,23 +268,27 @@ nav {
         letter-spacing: normal;
       }
       @media screen and (max-width: 500px) {
-        font-family: $font2;
+       
         font-size: 0.9rem;
-        width: calc(365px - 2vw);
+        width: calc(180px - 2vw);
         padding: 0 10px;
         letter-spacing: normal;
         text-align: center;
       }
-      @media screen and (max-width: 460px) {
+      @media screen and (max-width: 480px) {
        
-        width: calc(330px - 2vw);
+        width: calc(150px - 2vw);
        
       }
       @media screen and (max-width: 390px) {
-       
-        display: none;
+       padding-left: 3px;
        
       }
+      @media screen and (max-width: 390px) {
+        max-width: 120px;
+        font-size: 0.8rem;
+        
+       }
      
     }
 

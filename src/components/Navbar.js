@@ -29,7 +29,9 @@ const Navbar = () => {
           <div className="nav-buttons">
             <button>Inscription gratuite</button>
             <button>Espace perso</button>
-            <button>Déconnexion</button>
+            <button>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </button>
             <span>en préparation</span>
           </div>
           <h3>Des applications pour se simplifier la vie</h3>
