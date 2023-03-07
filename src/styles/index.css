@@ -1,0 +1,793 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "DancingScript";
+  src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Inconsolata";
+  src: url(../assets/fonts/Inconsolata-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  font-family: cursive;
+  background: url(../assets/img/photogrimoire.jpg) center/cover;
+  height: 100vh;
+  color: rgb(37, 21, 11);
+}
+body h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  font-family: DancingScript, cursive;
+}
+
+.homeappli .homeappli-content {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.homeappli .homeappli-content .homeappli-text {
+  border-top: 2px solid whitesmoke;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container {
+  border-radius: 20px;
+  width: 70%;
+  max-width: 1100px;
+  margin: 20px auto;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: rgba(245, 245, 245, 0.315);
+  box-shadow: 13px 11px 18px 3px rgb(37, 21, 11);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 800px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+  align-items: center;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 10px 60px;
+  font-size: 3rem;
+  line-height: 90%;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 1300px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    font-size: 1.9rem;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h1 {
+    font-size: 1.7rem;
+    padding: 10px auto;
+    margin: 0 auto;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .e-mail {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  /*pour autoriser la sélection de l'email*/
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .e-mail button {
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  border: 6px solid rgb(136, 184, 96);
+  transition: 0.3s;
+  text-align: center;
+  min-width: 280px;
+  width: 35%;
+  max-width: 320px;
+  color: rgb(37, 21, 11);
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+@media screen and (max-width: 1300px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container .e-mail button {
+    font-size: 1rem;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container #inscription {
+  animation: btnanimation 10s forwards;
+}
+@keyframes btnanimation {
+  to {
+    transform: scale(0);
+    visibility: hidden;
+  }
+  50% {
+    transform: scale(1.4);
+    visibility: visible;
+  }
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h2 {
+  padding: 10px 15px;
+  font-size: 1.7rem;
+  font-family: cursive;
+  font-weight: 100px;
+}
+@media screen and (max-width: 1300px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h2 {
+    font-size: 1.3rem;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h3 {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  font-family: cursive;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h3 {
+    font-size: 1.1rem;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .trait {
+  position: relative;
+  /************************************************************/
+  /*************         ANIMATION de la barre en after sur h3            ********/
+  /************************************************************/
+  /*départ de la barre en after à scale(0) : invisible (cf précédemment)*/
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .trait::after {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  width: 100%;
+  /* 100% du parent */
+  height: 5px;
+  top: -10px;
+  left: 50%;
+  /*centre son bord gauche à 50% du bord*/
+  transform: translateX(-50%) scaleX(0);
+  /*se décale de 50% de sa propre taille à gauche, départ à scale(0) donc invisible pour l'animation*/
+  animation: panimation 10s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes panimation {
+  to {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h4 {
+  padding: 10px 15px;
+  font-size: 1.3rem;
+  font-family: cursive;
+  text-align: center;
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container p {
+  padding: 15px 15px;
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+@media screen and (max-width: 1300px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container p {
+    font-size: 1.1rem;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .flash .e-mail {
+  position: relative;
+  /************************************************************/
+  /*************         ANIMATION de la barre en after sur email          ********/
+  /************************************************************/
+  /*départ de la barre en after à scale(0) : invisible (cf précédemment)*/
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container .flash .e-mail::after {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  width: 100%;
+  /* 100% du parent */
+  height: 5px;
+  top: -10px;
+  left: 50%;
+  /*centre son bord gauche à 50% du bord*/
+  transform: translateX(-50%) scaleX(0);
+  /*se décale de 50% de sa propre taille à gauche, départ à scale(0) donc invisible pour l'animation*/
+  animation: panimation 10s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes panimation {
+  to {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h5 {
+  font-size: 3rem;
+  padding-right: 30px;
+  text-align: right;
+  padding-bottom: 10px;
+  font-family: DancingScript, cursive;
+}
+@media screen and (max-width: 600px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h5 {
+    font-size: 2rem;
+  }
+}
+.homeappli .homeappli-content .homeappli-text .homeappli-text-container h6 {
+  font-size: 1.2rem;
+  padding-left: 30px;
+  text-align: left;
+  padding-bottom: 15px;
+  letter-spacing: 1.5px;
+  font-family: cursive;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  /*pour autoriser la sélection de l'email*/
+}
+@media screen and (max-width: 600px) {
+  .homeappli .homeappli-content .homeappli-text .homeappli-text-container h6 {
+    font-size: 1rem;
+    padding: 0 5px;
+    letter-spacing: 1px;
+  }
+}
+
+.homedev .homedev-content {
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 15% 85%;
+}
+.homedev .homedev-content .homedev-text {
+  border-top: 2px solid whitesmoke;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.homedev .homedev-content .homedev-text .homedev-text-container {
+  border-radius: 20px;
+  width: 90%;
+  margin: 20px auto;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background: rgba(245, 245, 245, 0.315);
+  box-shadow: 13px 11px 18px 3px rgb(37, 21, 11);
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 800px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.homedev .homedev-content .homedev-text .homedev-text-container h1 {
+  align-items: center;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 10px 60px;
+  font-size: 3rem;
+  line-height: 90%;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 1300px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    font-size: 1.9rem;
+    padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h1 {
+    font-size: 1.7rem;
+    padding: 10px auto;
+    margin: 0 auto;
+  }
+}
+.homedev .homedev-content .homedev-text .homedev-text-container h2 {
+  padding: 10px 15px;
+  font-size: 1.7rem;
+  font-family: cursive;
+  font-weight: 100px;
+}
+@media screen and (max-width: 1300px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container h2 {
+    font-size: 1.3rem;
+  }
+}
+.homedev .homedev-content .homedev-text .homedev-text-container .trait {
+  position: relative;
+  /************************************************************/
+  /*************         ANIMATION de la barre en after sur h3            ********/
+  /************************************************************/
+  /*départ de la barre en after à scale(0) : invisible (cf précédemment)*/
+}
+.homedev .homedev-content .homedev-text .homedev-text-container .trait::after {
+  content: "";
+  position: absolute;
+  background: whitesmoke;
+  width: 100%;
+  /* 100% du parent */
+  height: 5px;
+  top: -10px;
+  left: 50%;
+  /*centre son bord gauche à 50% du bord*/
+  transform: translateX(-50%) scaleX(0);
+  /*se décale de 50% de sa propre taille à gauche, départ à scale(0) donc invisible pour l'animation*/
+  animation: panimation 10s ease-in-out infinite;
+  transform-origin: center;
+}
+@keyframes panimation {
+  to {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+.homedev .homedev-content .homedev-text .homedev-text-container .recapcard-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.homedev .homedev-content .homedev-text .homedev-text-container .contact h5 {
+  font-size: 3rem;
+  padding-right: 30px;
+  text-align: right;
+  padding-bottom: 10px;
+  font-family: DancingScript, cursive;
+}
+@media screen and (max-width: 600px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container .contact h5 {
+    font-size: 2rem;
+  }
+}
+.homedev .homedev-content .homedev-text .homedev-text-container .contact h6 {
+  font-size: 1.2rem;
+  padding-left: 30px;
+  text-align: left;
+  padding-bottom: 15px;
+  letter-spacing: 1.5px;
+  font-family: cursive;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+  /*pour autoriser la sélection de l'email*/
+}
+@media screen and (max-width: 600px) {
+  .homedev .homedev-content .homedev-text .homedev-text-container .contact h6 {
+    font-size: 1rem;
+    padding: 0 5px;
+    letter-spacing: 1px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: auto auto;
+  background: url(../../assets/img/champetre.jpg) center/cover;
+}
+nav .nav-container {
+  width: 100vw;
+  padding: 20px;
+}
+@media screen and (max-width: 1200px) {
+  nav .nav-container {
+    margin: 5px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container {
+    margin: 5px auto;
+    padding: 0 auto;
+  }
+}
+nav .nav-container .logo {
+  border: 2px solid whitesmoke;
+  box-shadow: 8px 7px 18px 3px whitesmoke;
+  border-radius: 20px;
+  background: rgba(187, 176, 159, 0.644);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  max-width: 1100px;
+  max-height: 110px;
+  margin: 3px auto;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "lo na bt" "sl sl sl";
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  nav .nav-container .logo {
+    margin: 5px 30px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  nav .nav-container .logo {
+    max-width: calc(850px - 2vw);
+    margin: 0 auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "lo na" "sl bt";
+  }
+}
+@media screen and (max-width: 880px) {
+  nav .nav-container .logo {
+    padding: 0 auto;
+    max-width: calc(650px - 4vw);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 680px) {
+  nav .nav-container .logo {
+    grid-template-columns: 40% 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-container .logo {
+    max-width: calc(560px - 4vw);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "lo na" "bt bt" "sl sl";
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container .logo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 470px) {
+  nav .nav-container .logo {
+    max-width: calc(330px - 4vw);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "lo" "na" "sl";
+  }
+}
+nav .nav-container .logo h2 {
+  grid-area: lo;
+  font-family: DancingScript, cursive;
+  font-size: 2.2rem;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 8px;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 1520px) {
+  nav .nav-container .logo h2 {
+    font-size: 2.4vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  nav .nav-container .logo h2 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  nav .nav-container .logo h2 {
+    font-size: 1.6rem;
+    width: calc(280px - 4vw);
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container .logo h2 {
+    font-family: cursive;
+    font-size: 1rem;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+nav .nav-container .logo ul {
+  grid-area: na;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 570px) {
+  nav .nav-container .logo ul {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container .logo ul {
+    margin-right: 7px;
+  }
+}
+nav .nav-container .logo ul li {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  /* couleur du lien après la visite de l'utilisateur */
+}
+@media screen and (max-width: 1050px) {
+  nav .nav-container .logo ul li {
+    font-size: 1.1rem;
+    padding: 2px 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-container .logo ul li {
+    font-size: 1.1rem;
+    padding: 0 5px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container .logo ul li {
+    font-family: cursive;
+    font-size: 0.8rem;
+  }
+}
+nav .nav-container .logo ul li a.nav-active {
+  background: rgb(136, 184, 96);
+}
+nav .nav-container .logo ul li a {
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 10px;
+  /* liens cliquables non-soulignés*/
+}
+nav .nav-container .logo ul li a:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
+nav .nav-container .logo ul li a:hover {
+  letter-spacing: 2.5px;
+  background: rgb(37, 21, 11);
+}
+@media screen and (max-width: 600px) {
+  nav .nav-container .logo ul li a:hover {
+    letter-spacing: 1px;
+  }
+}
+nav .nav-container .logo .nav-buttons {
+  font-size: 2rem;
+  padding: 0 5px 0 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1050px) {
+  nav .nav-container .logo .nav-buttons {
+    font-size: 1.4rem;
+  }
+}
+nav .nav-container .logo .nav-buttons button {
+  grid-area: bt;
+  margin: 5px;
+  padding: 5px;
+  font-weight: 700;
+  font-family: cursive;
+  border-radius: 10px;
+  border: 2px rgb(136, 184, 96);
+}
+nav .nav-container .logo h3 {
+  grid-area: sl;
+  font-size: 1.7rem;
+  padding: 3px 7px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1130px) {
+  nav .nav-container .logo h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  nav .nav-container .logo h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 930px) {
+  nav .nav-container .logo h3 {
+    max-width: calc(650px - 4vw);
+  }
+}
+@media screen and (max-width: 880px) {
+  nav .nav-container .logo h3 {
+    padding: 0 auto;
+    width: calc(250px - 2vw);
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .nav-container .logo h3 {
+    width: calc(450px - 2vw);
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav .nav-container .logo h3 {
+    font-family: cursive;
+    font-size: 0.9rem;
+    width: calc(320px - 2vw);
+    padding: 0 10px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  nav .nav-container .logo h3 {
+    width: calc(200px - 2vw);
+  }
+}
+
+.recap-card {
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 10px;
+  padding: 5px;
+  background: rgba(245, 245, 245, 0.315);
+  box-shadow: 13px 11px 18px 3px rgb(37, 21, 11);
+}
+.recap-card h3 {
+  padding: 10px 10px 5px 10px;
+  font-size: 1.2rem;
+  font-family: cursive;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  .recap-card h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .recap-card h3 {
+    font-size: 1rem;
+  }
+}
+.recap-card h4 {
+  padding: 5px;
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: left;
+}
+.recap-card p {
+  padding: 0 3px 0 3px;
+  font-size: 1rem;
+  font-family: cursive;
+}
+@media screen and (max-width: 1300px) {
+  .recap-card p {
+    font-size: 1.1rem;
+  }
+}
+.recap-card h5 {
+  padding: 0 3px 0 10px;
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: left;
+  color: rgb(131, 56, 7);
+}
+@media screen and (max-width: 1300px) {
+  .recap-card h5 {
+    font-size: 0.9rem;
+  }
+}
+.recap-card h6 {
+  padding: 0 3px 0 10px;
+  font-size: 1rem;
+  font-family: cursive;
+  text-align: left;
+  color: rgb(44, 15, 110);
+}
+@media screen and (max-width: 1300px) {
+  .recap-card h6 {
+    font-size: 0.9rem;
+  }
+}
+.recap-card .code {
+  max-width: 540px;
+  height: 220px;
+  background: whitesmoke;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.recap-card .code p {
+  font-family: Inconsolata, "Courrier New";
+  font-size: 1rem;
+}/*# sourceMappingURL=index.css.map */

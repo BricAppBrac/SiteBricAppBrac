@@ -1,0 +1,9 @@
+User-agent: * 
+Disallow: */trackback
+Disallow: /*/feed
+Disallow: /*/comments
+Disallow: /cgi-bin
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.gz
+Disallow: /*.cgi
